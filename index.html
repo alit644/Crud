@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="crud.css">
+    <script defer src="crud.js"></script>
+</head>
+<body>
+
+
+    <div class="crud">
+
+        <div class="head">
+            <h2>Products</h2>
+        </div>
+
+
+        <div class="inputs">
+            <h3 class="title-input">
+                Add a new product
+            </h3>
+
+            <div class="three-input">
+                <span> ID <input id="id" type="number" placeholder="Id"></span>
+                <span>Title <input id="title" type="text" placeholder="Title"></span>
+                <span>Price <input id="price" type="number" placeholder="Price"></span>
+            </div>
+            <button id="submit">Add</button>
+
+        </div>
+
+
+
+        <div class="output">
+            <h3 class="title-input">
+             product List
+            </h3>
+
+
+            <table>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th> Action</th>
+                </tr>
+
+
+                <tbody id="tbody">
+      
+                    <!-- <tr>
+                        <td>003</td>
+                        <td>Laptop</td>
+                        <td>5000$</td>
+                        <td><ul>
+                            <li><button id="del">Delete</button></li>
+                            <li><button id="update">Update</button></li>
+                        </ul></td>
+                      
+                    </tr> -->
+                </tbody>
+
+            </table>
+        </div>
+
+
+    </div>
+
+    <div class="dark">
+        <div class="toggle"></div>
+    </div>
+    
+</body>
+</html>
